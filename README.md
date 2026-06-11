@@ -1,17 +1,15 @@
-<<<<<<< HEAD
-﻿# OSCC
+# OSCC
 
 OSCC 是一个面向 VRChat OSC 的 C#/.NET 桌面工具，包含键盘参数映射、语音参数控制和 AI 翻译模块。
 
 ## 内容
 
-- `source/voice-keyboard-src`：C# WinForms 源码。
-- `dist/OSCC-OSCC-Voice-Keyboard-Mapping`：已发布的 Windows x64 独立运行版。
+- source/voice-keyboard-src`：C# WinForms 源码。
+- dist/OSCC-OSCC-Voice-Keyboard-Mapping已发布的 Windows x64 独立运行版。
 
 
 ## 构建
-
-```powershell
+powershell
 cd source/voice-keyboard-src
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false
 ```
@@ -25,4 +23,4 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 License: Non-Commercial Personal Use License
 This project is free for personal, non-commercial use only. Commercial use is prohibited without written permission.
 本项目仅允许个人非商业使用。未经作者书面许可，禁止任何商业用途。
->>>>>>> 2880d7a123aa98b8e8e2f13b98f0bbaf1769f622
+
