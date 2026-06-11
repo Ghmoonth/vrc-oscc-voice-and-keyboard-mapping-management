@@ -1,0 +1,9 @@
+﻿bin/
+obj/
+*.user
+*.suo
+*.log
+*.tmp
+oscc_sentence_*.wav
+vrcvosc_keyboard_error.log
+oscc_startup_error.log

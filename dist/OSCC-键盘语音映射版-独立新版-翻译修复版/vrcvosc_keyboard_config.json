@@ -1,0 +1,206 @@
+﻿{
+    "oscHost":  "127.0.0.1",
+    "oscPort":  9000,
+    "mappings":  [
+                     {
+                         "id":  "3be23d6dbd4f4c109c0ac866d39c8597",
+                         "enabled":  true,
+                         "project":  "示例布尔开关",
+                         "parameter":  "ExampleBool",
+                         "hotkey":  "Ctrl+Alt+1",
+                         "type":  "bool",
+                         "mode":  "toggle",
+                         "value":  "true",
+                         "offValue":  "false",
+                         "step":  0.1,
+                         "min":  0,
+                         "max":  1,
+                         "durationMs":  250,
+                         "actions":  [
+
+                                     ]
+                     },
+                     {
+                         "id":  "caea0e3c5a9e4d44a181600ca78afda7",
+                         "enabled":  true,
+                         "project":  "示例数值增加",
+                         "parameter":  "ExampleFloat",
+                         "hotkey":  "Ctrl+Alt+Up",
+                         "type":  "float",
+                         "mode":  "increment",
+                         "value":  "0",
+                         "offValue":  "0",
+                         "step":  0.1,
+                         "min":  0,
+                         "max":  1,
+                         "durationMs":  250,
+                         "actions":  [
+
+                                     ]
+                     }
+                 ],
+    "voiceMappings":  [
+                          {
+                              "id":  "b0f9158a93a04afc8a3a476799cd85d8",
+                              "enabled":  true,
+                              "note":  "",
+                              "keywords":  "dps",
+                              "intent":  "打开dps",
+                              "matchMode":  "AI 语义判断",
+                              "parameter":  "111",
+                              "type":  "bool",
+                              "mode":  "toggle",
+                              "value":  "true",
+                              "offValue":  "false",
+                              "step":  0.1,
+                              "min":  0,
+                              "max":  1,
+                              "durationMs":  250,
+                              "actions":  [
+                                              {
+                                                  "parameter":  "111",
+                                                  "type":  "bool",
+                                                  "mode":  "toggle",
+                                                  "value":  "true",
+                                                  "offValue":  "false",
+                                                  "step":  0.1,
+                                                  "min":  0,
+                                                  "max":  1,
+                                                  "durationMs":  250
+                                              }
+                                          ]
+                          }
+                      ],
+    "voiceRecognition":  {
+                             "enabled":  false,
+                             "sourceType":  "音频设备/程序",
+                             "apiEndpoint":  "wss://dashscope.aliyuncs.com/api-ws/v1/inference",
+                             "apiKey": "",
+                             "model":  "paraformer-realtime-v2",
+                             "aiSemanticMatching":  true,
+                             "aiEndpoint":  "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+                             "aiApiKey": "",
+                             "aiModel":  "qwen-max-latest",
+                             "aiThreshold":  0.75,
+                             "watchTextFilePath":  "",
+                             "watchAudioFolderPath":  "",
+                             "microphoneDevices":  [
+
+                                                   ],
+                             "speakerDevices":  [
+                                                    "Headset (Sound Blaster GC7)"
+                                                ],
+                             "programSources":  [
+
+                                                ],
+                             "pollMs":  500,
+                             "vadThreshold":  0.004,
+                             "vadPreRollMs":  700,
+                             "vadVoiceStartMs":  200,
+                             "vadSilenceEndMs":  900,
+                             "vadMinUtteranceMs":  500,
+                             "vadMaxUtteranceMs":  12000,
+                             "ignoreCase":  true,
+                             "triggerOncePerRecognition":  true,
+                             "aiPreset":  "最强",
+                             "asrPreset":  "实时识别",
+                             "asrProvider":  "千问/百炼",
+                             "aiProvider":  "千问/百炼"
+                         },
+    "aiTranslation":  {
+                          "enabled":  false,
+                          "sourceType":  "音频设备/程序",
+                          "asrProvider":  "千问/百炼",
+                          "asrPreset":  "实时识别",
+                          "apiEndpoint":  "wss://dashscope.aliyuncs.com/api-ws/v1/inference",
+                          "apiKey": "",
+                          "model":  "paraformer-realtime-v2",
+                          "aiProvider":  "千问/百炼",
+                          "aiPreset":  "最强",
+                          "aiEndpoint":  "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+                          "aiApiKey": "",
+                          "aiModel":  "qwen-max-latest",
+                          "targetLanguage":  "中文",
+                          "outputTarget":  "Chatbox",
+                          "includeOriginal":  true,
+                          "chatboxNotify":  false,
+                          "steamVrHost":  "127.0.0.1",
+                          "steamVrPort":  9002,
+                          "steamVrAddress":  "/steamvr/subtitle",
+                          "microphoneDevices":  [
+
+                                                ],
+                          "speakerDevices":  [
+
+                                             ],
+                          "programSources":  [
+
+                                             ],
+                          "vadThreshold":  0.004,
+                          "vadPreRollMs":  700,
+                          "vadVoiceStartMs":  200,
+                          "vadSilenceEndMs":  900,
+                          "vadMinUtteranceMs":  500,
+                          "vadMaxUtteranceMs":  12000,
+                          "others":  {
+                                         "enabled":  true,
+                                         "asrProvider":  "千问/百炼",
+                                         "asrPreset":  "实时翻译输入",
+                                         "apiEndpoint":  "wss://dashscope.aliyuncs.com/api-ws/v1/inference",
+                                         "apiKey": "",
+                                         "model":  "paraformer-realtime-v2",
+                                         "targetLanguage":  "中文",
+                                         "outputTarget":  "SteamVR 掌心字幕",
+                                         "includeOriginal":  true,
+                                         "chatboxNotify":  false,
+                                         "steamVrHost":  "127.0.0.1",
+                                         "steamVrPort":  9002,
+                                         "steamVrAddress":  "/steamvr/subtitle",
+                                         "microphoneDevices":  [
+
+                                                               ],
+                                         "speakerDevices":  [
+
+                                                            ],
+                                         "programSources":  [
+
+                                                            ],
+                                         "vadThreshold":  0.004,
+                                         "vadPreRollMs":  700,
+                                         "vadVoiceStartMs":  200,
+                                         "vadSilenceEndMs":  900,
+                                         "vadMinUtteranceMs":  500,
+                                         "vadMaxUtteranceMs":  12000
+                                     },
+                          "self":  {
+                                       "enabled":  true,
+                                       "asrProvider":  "千问/百炼",
+                                       "asrPreset":  "实时翻译输入",
+                                       "apiEndpoint":  "wss://dashscope.aliyuncs.com/api-ws/v1/inference",
+                                       "apiKey": "",
+                                       "model":  "paraformer-realtime-v2",
+                                       "targetLanguage":  "英文",
+                                       "outputTarget":  "Chatbox",
+                                       "includeOriginal":  false,
+                                       "chatboxNotify":  false,
+                                       "steamVrHost":  "127.0.0.1",
+                                       "steamVrPort":  9002,
+                                       "steamVrAddress":  "/steamvr/subtitle",
+                                       "microphoneDevices":  [
+
+                                                             ],
+                                       "speakerDevices":  [
+
+                                                          ],
+                                       "programSources":  [
+
+                                                          ],
+                                       "vadThreshold":  0.004,
+                                       "vadPreRollMs":  700,
+                                       "vadVoiceStartMs":  200,
+                                       "vadSilenceEndMs":  900,
+                                       "vadMinUtteranceMs":  500,
+                                       "vadMaxUtteranceMs":  12000
+                                   }
+                      }
+}
